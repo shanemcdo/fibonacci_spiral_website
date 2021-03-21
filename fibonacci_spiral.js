@@ -72,7 +72,10 @@ class FibonacciSpiral{
                     position.x += previous_length;
                     break;
             }
-            if(position.x < -width / 2 || position.x > width / 2 || position.y < -height / 2 || position.y > height / 2)
+            if(position.x + length < -width / 2 ||
+                position.x - length > width / 2 ||
+                position.y + length < -height / 2 ||
+                position.y - length > height / 2)
                 out_of_bounds[counter % 4] = true;
             if(!(out_of_bounds.indexOf(false) >= 0))
                 break;
