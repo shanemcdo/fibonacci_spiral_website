@@ -1,6 +1,12 @@
 class FibonacciSpiral{
     constructor(){
         this.minimum_length = 0.05;
+        this.colors = [
+            '#FFB1B0',
+            '#FFDFBE',
+            '#B4F0A7',
+            '#A9D1F7',
+        ]
     }
     draw(){
         this.minimum_length *= 1.05;
@@ -13,6 +19,7 @@ class FibonacciSpiral{
         let out_of_bounds = [false, false, false, false];
         let temp;
         for(let counter = 0; counter < 100; counter++){
+            fill(this.colors[counter % this.colors.length]);
             square(position.x, position.y, length);
             previous_previous_length = previous_length;
             previous_length = length;

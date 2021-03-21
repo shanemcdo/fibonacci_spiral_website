@@ -2,7 +2,6 @@ let spiral;
 
 function setup(){
     createCanvas(window.innerWidth - 5, window.innerHeight - 5);
-    noFill();
     stroke(255);
     frameRate(32);
     spiral = new FibonacciSpiral();
