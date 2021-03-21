@@ -4,7 +4,7 @@ function setup(){
     createCanvas(window.innerWidth - 5, window.innerHeight - 5);
     noFill();
     stroke(255);
-    frameRate(15);
+    frameRate(32);
     spiral = new FibonacciSpiral();
 }
 
@@ -15,5 +15,6 @@ function windowResized(){
 
 function draw(){
     translate(width / 2, height / 2);
+    background(10);
     spiral.draw();
 }
