@@ -4,10 +4,8 @@ class FibonacciSpiral{
     }
     draw(){
         this.minimum_length *= 1.05;
-        if(this.minimum_length > 0.34){
-            console.log('reset');
+        if(this.minimum_length > 0.34)
             this.minimum_length = 0.05;
-        }
         let previous_previous_length = 0;
         let previous_length = 0;
         let length = this.minimum_length;
