@@ -1,12 +1,12 @@
 class FibonacciSpiral{
     constructor(){
-        this.minimum_length = 0.5;
+        this.minimum_length = 0.05;
     }
     draw(){
         this.minimum_length *= 1.05;
-        if(this.minimum_length > 3.4){
+        if(this.minimum_length > 0.34){
             console.log('reset');
-            this.minimum_length = 0.5;
+            this.minimum_length = 0.05;
         }
         let previous_previous_length = 0;
         let previous_length = 0;
