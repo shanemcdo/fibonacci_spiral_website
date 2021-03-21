@@ -1,17 +1,18 @@
 class FibonacciSpiral{
     constructor(){
-        this.minimum_length = 0.05;
+        this.minimum_length = 0.01;
         this.colors = [
             '#FFB1B0',
             '#FFDFBE',
             '#B4F0A7',
             '#A9D1F7',
         ]
+        this.counter = 0;
     }
     draw(){
         this.minimum_length *= 1.05;
-        if(this.minimum_length > 0.34)
-            this.minimum_length = 0.05;
+        if(this.minimum_length > 3.3229712) // value found via trial and error
+            this.minimum_length = 0.01;
         let previous_previous_length = 0;
         let previous_length = 0;
         let length = this.minimum_length;
